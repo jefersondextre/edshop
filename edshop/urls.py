@@ -16,6 +16,13 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
+'''importantdo todos los settings'''
+from django.conf import settings 
+''' para agregar una ruta estatica  a mi url patters= [... ]
+en static agrego de settings la constante MEDIA_URL con su respectiva ruta del documento (document_root) que esta en settings.MEDIA_ROOT '''
+from django.conf.urls.static import static
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-]
+]+ static(settings.MEDIA_URL,document_root = settings.MEDIA_ROOT)

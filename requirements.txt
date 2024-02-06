@@ -1,0 +1,6 @@
+django == 4.2
+# para manejo de imagenes
+Pillow
+# para manejo de base de datos
+mysqlclient
+

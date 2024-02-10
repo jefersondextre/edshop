@@ -4,3 +4,4 @@ Pillow
 # para manejo de base de datos
 mysqlclient
 
+django-admin-tailwind
